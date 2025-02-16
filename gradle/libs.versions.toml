@@ -1,15 +1,15 @@
 [versions]
-agp = "8.2.1"
-kotlin = "1.9.22"
-core-ktx = "1.12.0"
+agp = "8.8.1"
+kotlin = "2.1.10"
+core-ktx = "1.15.0"
 junit = "4.13.2"
-androidx-test-ext-junit = "1.1.5"
-espresso-core = "3.5.1"
+androidx-test-ext-junit = "1.2.1"
+espresso-core = "3.6.1"
 lifecycle-runtime-ktx = "2.7.0"
-activity-compose = "1.8.2"
-compose-bom = "2023.10.01"
-appcompat = "1.6.1"
-material = "1.11.0"
+activity-compose = "1.10.0"
+compose-bom = "2025.02.00"
+appcompat = "1.7.0"
+material = "1.12.0"
 
 [libraries]
 androidx-lifecycle-process = { module = "androidx.lifecycle:lifecycle-process", version.ref = "lifecycle-runtime-ktx" }
@@ -34,5 +34,6 @@ material = { group = "com.google.android.material", name = "material", version.r
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 androidLibrary = { id = "com.android.library", version.ref = "agp" }
 
