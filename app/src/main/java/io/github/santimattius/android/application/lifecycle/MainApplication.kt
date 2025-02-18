@@ -1,13 +1,14 @@
 package io.github.santimattius.android.application.lifecycle
 
 import android.app.Application
-import androidx.lifecycle.ProcessLifecycleOwner
+import io.github.santimattius.android.application.lifecycle.callbacks.MyActivityLifecycleCallbacks
 
 class MainApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        registerActivityLifecycleCallbacks(MyAppLifecycle())
-        ProcessLifecycleOwner.get().lifecycle.addObserver(MyAppLifecycleObserver())
+        //DefaultActivityBehaviour.addBehaviour(ActivityBlocker())
+        registerActivityLifecycleCallbacks(MyActivityLifecycleCallbacks())
+        //ProcessLifecycleOwner.get().lifecycle.addObserver(MyAppLifecycleObserver())
     }
 }
