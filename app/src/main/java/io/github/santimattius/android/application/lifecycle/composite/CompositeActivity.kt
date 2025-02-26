@@ -1,12 +1,12 @@
 package io.github.santimattius.android.application.lifecycle.composite
 
 import android.util.Log
-import androidx.activity.ComponentActivity
 import androidx.annotation.CallSuper
+import io.github.santimattius.android.application.lifecycle.activities.BaseActivity
 import io.github.santimattius.android.application.lifecycle.tools.timeInMs
 import kotlin.time.measureTimedValue
 
-abstract class CompositeActivity : ComponentActivity() {
+abstract class CompositeActivity : BaseActivity() {
     private val behaviours = mutableListOf<ActivityBehaviour>()
 
     init {

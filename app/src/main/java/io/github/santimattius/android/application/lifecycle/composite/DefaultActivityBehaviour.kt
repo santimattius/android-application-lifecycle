@@ -5,7 +5,7 @@ import io.github.santimattius.android.application.lifecycle.activities.EmptyActi
 object DefaultActivityBehaviour {
 
     private val _behaviours: MutableList<ActivityBehaviour> =
-        (0..20).map { EmptyActivityBehaviour() }.toMutableList()
+        listOf(EmptyActivityBehaviour() ).toMutableList()
 
     val behaviours: List<ActivityBehaviour>
         get() = _behaviours.toList()
