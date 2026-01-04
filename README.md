@@ -39,8 +39,7 @@ More details in the article: [Foreground and Background Events in Android: How C
 
 ---
 
-## (NEW) Example 2: Avoid Overriding Lifecycle Methods in Activity/Fragment
-<!--
+## Example 2: Avoid Overriding Lifecycle Methods in Activity/Fragment
 Instead of overriding methods like `onResume()` or `onPause()`, we can use a `LifecycleObserver` within the `ViewModel`:
 
 ```kotlin
@@ -69,7 +68,7 @@ class MyFragment : Fragment() {
 ```
 
 More details in the article: [Stop Override Activity/Fragment Lifecycle Methods in Android]()
--->
+
 ## Contributions
 
 If you have improvements or new examples, they are welcome! Open an issue or a pull request with your contribution.
